@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <script>
+        window.onload = function() {
+            alert("所有回忆都值得铭记");
+            document.body.classList.add("body--ready1"); // 页面加载后应用背景
+        };
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background 1s ease-in-out; /* 背景渐变过渡 */
+        }
+
+        .body--ready {
+            background: linear-gradient(to bottom, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 0%);
+        }
+
+        .body--ready1 {
+            background: linear-gradient(to bottom, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 30%);
+        }
+
+        .body--ready2 {
+            background: linear-gradient(to bottom, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 60%);
+        }
+
+        .body--ready3 {
+            background: linear-gradient(to bottom, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%);
+        }
+
+        .body--ready4 {
+            background: linear-gradient(to bottom, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+        }
+
+        img {
+            max-width: 80%;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://raw.githubusercontent.com/Eugene-Youth/img/main/graph.jpg" alt="Graph Image">
+</body>
+</html>
